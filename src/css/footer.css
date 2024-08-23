@@ -1,0 +1,110 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+
+body {
+  min-height: 100vh;
+}
+
+footer {
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  text-align: center;
+  margin-top: auto;
+  border-top: solid 3px black;
+  background-color: rgba(200, 200, 200, 0.15);
+}
+
+footer li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 50px;
+}
+
+footer ul {
+  gap: 20px;
+}
+
+footer a {
+  color: black;
+}
+
+p.article-vide {
+  margin: auto;
+}
+
+.color-contact a {
+  color: white;
+}
+
+#contact {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 1350px) and (min-width: 1030px) {
+  footer ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  footer ul li {
+    margin: 0;
+    padding: 20px;
+  }
+
+  .color-contact-1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1029px) and (min-width: 500px) {
+  footer ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  footer ul li {
+    margin: 0;
+    padding: 20px;
+  }
+
+  .color-contact-1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  footer ul li {
+    margin: 0;
+    padding: 0;
+  }
+}

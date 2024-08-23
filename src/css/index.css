@@ -1,0 +1,360 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/fond1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* --Lien projet pro et perso--*/
+
+.lien-index a {
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  border: solid 2px black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.lien-index a:hover {
+  background-color: black;
+}
+
+section ul {
+  display: flex;
+  justify-content: center;
+}
+
+/* --fleche lien en bas-- */
+
+img.fleche {
+  height: 40px;
+  width: 40px;
+  padding-left: 50%;
+}
+
+/* --Barre de progression pour les compétences-- */
+
+.skill .name {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em;
+}
+
+.skill {
+  display: flex;
+  border: solid 2px black;
+  border-radius: 30px;
+  margin: auto;
+  padding: 1em;
+  width: fit-content;
+}
+
+.skill .name span {
+  margin: 10px 0;
+  border-radius: 50px;
+  padding: 5px 15px;
+  text-align: center;
+  border: solid 2px #ebecf0;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 120px;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.skill .name span:hover {
+  box-shadow: inset 0.91px -9.91px 15px #d9dade,
+    inset -9.91px -9.91px 15px #ffffff, 0 8px 10px rgba(0, 0, 0, 0.15),
+    0 1px 3px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  transition: 0.2s;
+}
+
+.bar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0.5em;
+}
+
+.bar {
+  width: 350px;
+  height: 10px;
+  background-color: blueviolet;
+  border-radius: 20px;
+  box-shadow: inset 6px 6px 6px #d9dade, inset -6px -6px 6px #ffffff;
+}
+
+.bar .progress {
+  height: 100%;
+  background-color: blueviolet;
+  border-radius: 20px;
+}
+
+.bar:nth-child(1) .progress {
+  width: 70%;
+}
+
+.bar:nth-child(2) .progress {
+  width: 70%;
+}
+
+.bar:nth-child(3) .progress {
+  width: 30%;
+}
+
+.bar:nth-child(4) .progress {
+  width: 50%;
+}
+
+.bar:nth-child(5) .progress {
+  width: 20%;
+}
+
+.bar:nth-child(6) .progress {
+  width: 60%;
+}
+
+/* Pourcentages pour les compétences*/
+
+.pourcentage {
+  margin: -30px;
+  margin-left: 80%;
+  font-weight: bold;
+}
+
+/* --Lien pour les projets-- */
+
+.border ul li {
+  list-style-type: none;
+  text-align: center;
+  width: 300px;
+  height: 100px;
+  display: flex;
+}
+
+.lien a {
+  color: white;
+  border-radius: 30px;
+  background-color: rgba(200, 200, 200, 0.15);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+}
+
+.border ul li {
+  margin: auto;
+  text-align: center;
+}
+
+section {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.border {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.lien {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.container-bar {
+  display: flex;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+/* --Infos et compétences le text et pourcentage-- */
+
+.skill {
+  text-align: center;
+}
+
+.infos {
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  color: white;
+}
+
+/* --Hover pour les projets-- */
+
+.content {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.753);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+  border-radius: 30px;
+}
+
+.lien a:hover .content {
+  opacity: 1;
+}
+
+.description {
+  text-align: center;
+  font-size: 50px;
+}
+
+/* --Media queries pour les liens projet-- */
+
+@media screen and (max-width: 1310px) and (min-width: 500px) {
+  .border ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 80%;
+    column-gap: 10px;
+  }
+
+  .border ul li {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  #projet-perso,
+  #infos-competences {
+    padding-top: 200px;
+  }
+  .color-contact-1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 350px) {
+  .border ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 200px;
+  }
+
+  .border ul li {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  #projet-perso,
+  #infos-competences {
+    padding-top: 30px;
+  }
+
+  .color-contact-1 {
+    display: none;
+  }
+}
+
+/* --Media queries pour infos et compétences-- */
+
+@media screen and (max-width: 1079.2px) and (min-width: 1041px) {
+  .skill {
+    margin-bottom: 50px;
+  }
+
+  .skill .name span {
+    padding: 1px 5px;
+  }
+
+  .container-bar {
+    display: flex;
+  }
+
+  .color-contact-1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1040.8px) and (min-width: 620px) {
+  .skill {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .skill .name span {
+    padding: 1px 5px;
+  }
+
+  .container-bar {
+    display: flex;
+  }
+
+  .color-contact-1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 619px) and (min-width: 350px) {
+  .skill {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .skill .name {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: none;
+  }
+
+  .container-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bar {
+    margin-bottom: 20px;
+  }
+
+  .color-contact-1 {
+    display: none;
+  }
+}
