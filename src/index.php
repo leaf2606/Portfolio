@@ -98,15 +98,15 @@ $projetpersoImages = $db->query("SELECT * FROM lien WHERE section = 'projet-pers
             <div class="bar-container">
                 <div class="bar">
                     <div class="progress"></div>
-                    <p class="pourcentage">70%</p>
+                    <p class="pourcentage">60%</p>
                 </div>
                 <div class="bar">
                     <div class="progress"></div>
-                    <p class="pourcentage">70%</p>
+                    <p class="pourcentage">60%</p>
                 </div>
                 <div class="bar">
                     <div class="progress"></div>
-                    <p class="pourcentage">30%</p>
+                    <p class="pourcentage">20%</p>
                 </div>
                 <div class="bar">
                     <div class="progress"></div>
@@ -118,7 +118,7 @@ $projetpersoImages = $db->query("SELECT * FROM lien WHERE section = 'projet-pers
                 </div>
                 <div class="bar">
                     <div class="progress"></div>
-                    <p class="pourcentage">60%</p>
+                    <p class="pourcentage">50%</p>
                 </div>
             </div><br><br>
         </div>

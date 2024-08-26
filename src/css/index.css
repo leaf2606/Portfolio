@@ -118,15 +118,15 @@ img.fleche {
 }
 
 .bar:nth-child(1) .progress {
-  width: 70%;
+  width: 60%;
 }
 
 .bar:nth-child(2) .progress {
-  width: 70%;
+  width: 60%;
 }
 
 .bar:nth-child(3) .progress {
-  width: 30%;
+  width: 20%;
 }
 
 .bar:nth-child(4) .progress {
@@ -138,7 +138,7 @@ img.fleche {
 }
 
 .bar:nth-child(6) .progress {
-  width: 60%;
+  width: 50%;
 }
 
 /* Pourcentages pour les compétences*/
@@ -237,6 +237,7 @@ img {
 
 .lien a:hover .content {
   opacity: 1;
+  /* filter: blur(4px); */
 }
 
 .description {
