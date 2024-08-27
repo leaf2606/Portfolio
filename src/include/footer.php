@@ -13,10 +13,14 @@
         <footer>
 
             <ul>
-                <li class="color-contact#contact"><a href="">adresse@gmail.com</a></li>
-                <li class="color-contact#contact"><a href="">06 58 75 99 22</a></li>
-                <li class="color-contact#contact"><a href="">Nevers 58</a></li>
-                <li class="color-contact#contact"><a href="">Date de naissance</a></li>
+                <li class="color-contact#contact"><img src="../img/adresse.png" alt="accueil" class="contact-logo"><a
+                        href="">Adresse@gmail.com</a>
+                </li>
+                <li class="color-contact#contact"><img src="../img/telephone.png" alt="accueil" class="contact-logo"><a
+                        href="">06 58 75 99 22</a></li>
+                <li class="color-contact#contact"><img src="../img/accueil.png" alt="accueil" class="contact-logo"><a
+                        href="">Nevers 58</a></li>
+                <!-- <li class="color-contact#contact"><a href="">Date de naissance</a></li> -->
             </ul>
 
         </footer>

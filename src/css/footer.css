@@ -21,11 +21,11 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 15px;
+  padding: 25px;
   text-align: center;
   margin-top: auto;
   border-top: solid 3px black;
-  background-color: rgba(200, 200, 200, 0.15);
+  background-color: white;
 }
 
 footer li {
@@ -36,11 +36,12 @@ footer li {
 }
 
 footer ul {
-  gap: 20px;
+  gap: 200px;
 }
 
 footer a {
-  color: black;
+  color: blueviolet;
+  font-weight: bolder;
 }
 
 p.article-vide {
@@ -56,14 +57,16 @@ p.article-vide {
   margin: 0;
 }
 
+img.contact-logo {
+  width: 30px;
+  height: 30px;
+  padding-right: 20px;
+}
+
 @media screen and (max-width: 1350px) and (min-width: 1030px) {
   footer ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     text-align: center;
-    gap: 0;
-    padding: 0;
-    margin: 0;
+    gap: 150px;
   }
 
   footer ul li {
@@ -76,24 +79,34 @@ p.article-vide {
   }
 }
 
-@media screen and (max-width: 1029px) and (min-width: 500px) {
+@media screen and (max-width: 1120px) and (min-width: 1030px) {
   footer ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     text-align: center;
-    gap: 0;
-    padding: 0;
-    margin: 0;
+    gap: 50px;
   }
+}
 
-  footer ul li {
-    margin: 0;
-    padding: 20px;
+@media screen and (max-width: 1029px) and (min-width: 1000px) {
+  footer ul {
+    gap: 50px;
   }
+}
 
-  .color-contact-1 {
-    display: none;
+@media screen and (max-width: 999px) and (min-width: 350px) {
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
+}
+
+footer ul li {
+  margin: 0;
+  padding: 0px;
+}
+
+.color-contact-1 {
+  display: none;
 }
 
 @media screen and (max-width: 520px) {

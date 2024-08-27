@@ -32,7 +32,31 @@ $projetpersoImages = $db->query("SELECT * FROM lien WHERE section = 'projet-pers
 
     <?php include_once("./include/navbar.php"); ?>
 
-    <section id="projet-pro"><br>
+    <section id="accueil"><br><br>
+
+        <p class="prenom">Bonjour, je suis <span class="nom">Léa Fort</span></p><br><br>
+        <p class="text-sous">Je suis développeuse web actuellement en formation chez Onlineformapro à Nevers ...
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum
+        </p>
+        <br><br>
+
+        <div class="logo-reseaux">
+            <a href="https://github.com/" target="_blank"><img src="../img/github.png" alt="github" class="reseaux"></a>
+            <a href=""><img src="../img/linkedin.png" alt="linkedin" class="reseaux"></a>
+            <a href=""><img src="../img/cv.png" alt="cv" class="reseaux"></a>
+        </div>
+
+        <div>
+            <a href="#projet-pro"><img src="../img/fleche-bas.png" alt="fleche-bas" class="fleche-bas"></a>
+        </div>
+
+    </section><br><br>
+
+    <section id="projet-pro">
         <ul>
             <li class="lien-index"><a href="#">Projet Professionnel</a></li>
         </ul><br><br>
@@ -79,14 +103,21 @@ $projetpersoImages = $db->query("SELECT * FROM lien WHERE section = 'projet-pers
     </section>
 
     <div class="skill">
-        <p class="infos">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur.
-        </p>
         <div class="container-bar">
+
+            <div class="text-infos">
+
+                <p class="infos">Stage en entreprise :</p>
+
+                <p class="infos">Novembre 2023 Trade&Art<br>
+                    Stage graphiste Créative à la réalisation de support visuel<br>
+                    Nevers (58)</p>
+
+                <p class="infos">Août 2023 Davi the humanizers<br>
+                    Stage graphiste<br>
+                    Varennes-Vauzelles (58)</p>
+
+            </div>
             <div class="name">
                 <span>HTML</span>
                 <span>CSS</span>
