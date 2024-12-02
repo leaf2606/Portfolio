@@ -265,6 +265,7 @@ p.text-sous {
   max-width: 800px;
   margin: 15px auto;
   color: white;
+  padding-top: 50px;
 }
 
 img.reseaux {
@@ -299,6 +300,101 @@ img.fleche-bas {
   width: 50px;
   height: auto;
 }
+
+/* Animation pour changer de phrase avec un début fixe */
+
+/* .container-animation {
+  background-color: white;
+  border-radius: 30px;
+}
+
+.animated-text {
+  font-size: 35px;
+  font-weight: 600;
+  min-width: 280px;
+  text-align: center;
+  padding: 30px;
+}
+
+.animated-text span {
+  font-size: 35px;
+  font-weight: 600;
+  min-width: 280px;
+  position: relative;
+}
+
+.animated-text span::before {
+  content: "Léa Fort";
+  color: black;
+  animation: words 20s infinite;
+  background-attachment: fixed;
+}
+
+.animated-text span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: white;
+  border-left: 2px solid #aa6b39;
+  right: -8px;
+  animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 2px solid #aa6b3900;
+  }
+}
+
+@keyframes words {
+  0%,
+  20% {
+    content: "Léa Fort";
+  }
+  21%,
+  40% {
+    content: "Futur développeuse Web";
+  }
+  41%,
+  60% {
+    content: "à Nevers";
+  }
+  61%,
+  80% {
+    content: "à Onlineformapro";
+  }
+  81%,
+  100% {
+    content: "en formation";
+  }
+}
+
+@keyframes typing {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
+} */
 
 /* --Media queries pour les liens projet-- */
 

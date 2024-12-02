@@ -33,13 +33,15 @@ $projetpersoImages = $db->query("SELECT * FROM lien WHERE section = 'projet-pers
     <?php include_once("./include/navbar.php"); ?>
 
     <section id="accueil"><br><br>
-
-        <p class="prenom">Bonjour, je suis <span class="nom">Léa Fort</span></p><br><br>
+        <p class="prenom">Bonjour, je suis <span class="nom">Léa Fort</span></p>
         <p class="text-sous">Je suis développeuse web actuellement en formation chez Onlineformapro à Nevers ...
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit
             anim id est laborum
         </p>
         <br><br>
@@ -47,7 +49,7 @@ $projetpersoImages = $db->query("SELECT * FROM lien WHERE section = 'projet-pers
         <div class="logo-reseaux">
             <a href="https://github.com/" target="_blank"><img src="../img/github.png" alt="github" class="reseaux"></a>
             <a href=""><img src="../img/linkedin.png" alt="linkedin" class="reseaux"></a>
-            <a href=""><img src="../img/cv.png" alt="cv" class="reseaux"></a>
+            <a href="" target="_blank"><img src="../img/cv.png" alt="cv" class="reseaux"></a>
         </div>
 
         <div>
